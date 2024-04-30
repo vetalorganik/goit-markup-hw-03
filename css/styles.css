@@ -13,6 +13,18 @@ ol {
     list-style: none;
 }
 
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+}
+
 .header {}
 
 .header__nav {}
