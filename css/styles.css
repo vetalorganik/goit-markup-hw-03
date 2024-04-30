@@ -32,6 +32,10 @@ img {
     margin: 0 auto;
 }
 
+.visually-hidden {
+    display: none;
+}
+
 .flex {
     display: flex;
 }
@@ -51,8 +55,6 @@ img {
 .fd-col {
     flex-direction: column;
 }
-
-
 
 .header {
     display: flex;
@@ -173,13 +175,20 @@ img {
 }
 
 
-.features {}
+.features {
+    padding: 120px 0;
+}
 
 .features__title {}
 
-.features__list {}
+.features__list {
+    display: flex;
+    gap: 24px;
+}
 
-.features-item {}
+.features-item {
+    flex-basis: calc((100% - 72px) / 4);
+}
 
 .features-item__title {
     font-weight: 500;
@@ -187,6 +196,8 @@ img {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+
+    margin-bottom: 8px;
 }
 
 .features-item__text {
@@ -197,7 +208,7 @@ img {
 }
 
 .team {
-    background-color: #F4F4FD
+    background-color: #F4F4FD;
 }
 
 .team__title {
