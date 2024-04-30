@@ -34,6 +34,7 @@ img {
 
 .visually-hidden {
     display: none;
+    visibility: hidden;
 }
 
 .flex {
@@ -209,6 +210,7 @@ img {
 
 .team {
     background-color: #F4F4FD;
+    padding: 120px 0;
 }
 
 .team__title {
@@ -218,16 +220,26 @@ img {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #2e2f42;
+
+    margin-bottom: 72px;
 }
 
-.team__list {}
+.team__list {
+    display: flex;
+    gap: 24px;
+}
 
 .team-member {
     background-color: #ffffff;
-
+    flex-basis: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team-member__photo {}
+
+.team-member__info {
+    padding: 32px 0;
+}
 
 .team-member__name {
     font-weight: 500;
@@ -235,6 +247,8 @@ img {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    text-align: center;
+    margin-bottom: 8px;
 }
 
 .team-member__profession {
@@ -242,6 +256,8 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+
+    text-align: center;
 }
 
 .portfolio {}
